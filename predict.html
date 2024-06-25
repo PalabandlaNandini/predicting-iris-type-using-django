@@ -1,0 +1,14 @@
+<!-- iris_app/templates/predict.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iris Flower Prediction</title>
+  </head>
+  <body>
+    <h2>Enter Iris Flower Parameters</h2>
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Predict</button>
+    </form>
+  </body>
+</html>
